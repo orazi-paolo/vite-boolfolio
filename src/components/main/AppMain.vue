@@ -1,9 +1,14 @@
 <script>
+import MainProjects from './projects/MainProjects.vue';
+
 export default {
   data() {
     return {
       
     }
+  },
+  components: {
+    MainProjects,
   }
 }
 </script>
@@ -12,6 +17,9 @@ export default {
     <h1 class="text-danger">
         AppMain
     </h1>
+    <main>
+        <MainProjects />
+    </main>
 
 </template>
 
