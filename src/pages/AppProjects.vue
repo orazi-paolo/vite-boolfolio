@@ -15,11 +15,7 @@ export default {
 </script>
 
 <template>
-  <h2 class="text-center">
-    Projects
-  </h2>
   <ProjectsList />
-
 </template>
 
 <style scoped></style>

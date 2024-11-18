@@ -2,10 +2,10 @@
 import axios from 'axios';
 import ProjectCard from './ProjectCard.vue';
 export default {
-  data() {
-    return {
-        projectsList: [],        
-    }
+    data() {
+        return {
+            projectsList: [],
+        }
     },
     components: {
         ProjectCard,
@@ -32,12 +32,10 @@ export default {
 
 <template>
     <div class="container">
-        <ProjectCard 
-            v-for="project in projectsList"
-            :key="project.id"
-            :projectId="project.id"
-            :projectName="project.name"
-            :projectDescription="project.description"
-        />
+        <h2 class="text-white text-center pt-4 mb-4">
+            Projects
+        </h2>
+        <ProjectCard v-for="project in projectsList" :key="project.id" :projectId="project.id"
+            :projectName="project.name" :projectDescription="project.description" />
     </div>
 </template>

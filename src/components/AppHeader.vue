@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <header class="mb-3">
+    <header>
         <nav class="navbar navbar-expand bg-dark navbar-dark">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#">Paolo's portfolio</a>

@@ -16,7 +16,7 @@ export default {
 
 <template>
   <AppHeader />
-  <main>
+  <main class="mb-3">
     <RouterView />
   </main>
   <AppFooter />
@@ -25,4 +25,8 @@ export default {
 <style lang="scss">
 @use 'bootstrap/scss/bootstrap.scss';
 @use './styles/general.scss';
+
+body {
+  background-color: #2b2f36;
+}
 </style>
