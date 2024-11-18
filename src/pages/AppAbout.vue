@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <main class="about-section container-fluid py-5 bg-dark text-light">
+    <main class="about-section container-fluid py-5 text-light">
         <div class="container text-center">
             <h2 class="mb-5">About Me</h2>
             <div class="row align-items-center">

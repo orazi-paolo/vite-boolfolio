@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <main class="home-section container-fluid py-5 bg-dark text-light">
+  <main class="home-section container-fluid py-5 text-light">
     <div class="container text-center">
       <h1 class="mb-4">Ciao, sono Paolo Orazi</h1>
       <p class="mb-5">
@@ -71,10 +71,6 @@ export default {
   width: 60px;
   height: 60px;
   font-size: 24px;
-}
-
-.home-section {
-  background-color: #1e293b;
 }
 
 .card {
