@@ -15,7 +15,6 @@ export default {
                     this.singleProject = response.data.results;
                 })
                 .catch(function (error) {
-                    // handle error
                     console.log(error);
                 })
         }
@@ -27,12 +26,15 @@ export default {
 </script>
 
 <template>
-    <div class="card shadow-sm border-0 text-white bg-dark mb-3">
-        <div class="card-header text-center fw-bold bg-secondary">
-            {{ singleProject.id }} -- {{ singleProject.name }}
+    <div class="container">
+        <div class="card shadow-sm border-0 text-white bg-dark mb-3">
+            <div class="card-header text-center fw-bold bg-secondary">
+                {{ singleProject.id }} -- {{ singleProject.name }}
+            </div>
+            <div class="card-body">
+                <p class="card-text text-center">{{ singleProject.description }}</p>
+            </div>
         </div>
-        <div class="card-body">
-            <p class="card-text text-center">{{ singleProject.description }}</p>
-        </div>
+
     </div>
 </template>

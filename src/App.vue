@@ -2,11 +2,6 @@
 import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 export default {
-  data() {
-    return {
-
-    }
-  },
   components: {
     AppFooter,
     AppHeader
@@ -15,11 +10,13 @@ export default {
 </script>
 
 <template>
-  <AppHeader />
-  <main class="mb-3">
-    <RouterView />
-  </main>
-  <AppFooter />
+  <div class="d-flex flex-column min-vh-100">
+    <AppHeader />
+    <main class="d-flex justify-content-center align-items-center flex-grow-1 mb-3">
+      <RouterView />
+    </main>
+    <AppFooter />
+  </div>
 </template>
 
 <style lang="scss">
